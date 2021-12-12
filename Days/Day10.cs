@@ -22,7 +22,7 @@ namespace AoC2021.Days
             foreach (var line in lines)
             {
                 var stack = new Stack<char>();
-                var ok = true;
+                //var ok = true;
                 foreach (var c in line)
                 {
                     if (dic.Keys.Contains(c))
@@ -35,7 +35,7 @@ namespace AoC2021.Days
                         if (dic[matchAgainst].close != c)
                         {
                             ret += dic.Where(d => d.Value.close == c).First().Value.points;
-                            ok = false;
+                            //ok = false;
                             break;
                         }
                         else

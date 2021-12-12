@@ -6,8 +6,6 @@ namespace AoC2021.Days
 {
     public class Day9 : BaseDay
     {
-        int[] dr = new int[] { -1, 0, 1, 0 };
-        int[] dc = new int[] { 0, 1, 0, -1 };
         (int dr, int dc)[] directions = new (int, int)[4] { (-1, 0), (0, 1), (1, 0), (0, -1) };
 
         private List<(int r, int c)> GetLowPoints(int[][] grid)
